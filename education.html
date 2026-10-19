@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Nazmul Haque — Scientific Officer, agricultural statistics researcher, and applied statistician based in Gazipur, Bangladesh." name="description"/>
+<meta content="#ffffff" name="theme-color"/>
+<title>Education | Nazmul Haque</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;family=Libre+Baskerville:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root { --bg:#111519; --bg-soft:#161b20; --card:#1a2026; --stroke:#30373c; --muted:#abb1b4; --text:#f0ede7; --accent:#d5a15b; --container:1100px; }
+    * { box-sizing:border-box; }
+    [hidden] { display:none!important; }
+    html { scroll-behavior:smooth; scroll-padding-top:90px; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:'DM Sans',Arial,sans-serif; line-height:1.7; }
+    a { color:inherit; text-decoration:none; }
+    button { font:inherit; }
+    ::selection { background:var(--accent); color:var(--bg); }
+    .container { max-width:var(--container); padding:0 32px; margin:0 auto; }
+    .site-header { position:sticky; top:0; background:rgba(17,21,25,.96); backdrop-filter:blur(12px); z-index:20; border-bottom:1px solid var(--stroke); }
+    .header-row { display:flex; justify-content:space-between; align-items:center; min-height:82px; gap:24px; }
+    .brand { font:700 22px 'Libre Baskerville',Georgia,serif; white-space:nowrap; letter-spacing:-.7px; }
+    .nav { display:flex; gap:24px; align-items:center; }
+    .nav a, .eyebrow, .btn, .kicker, .tag { font-family:'DM Mono',monospace; letter-spacing:.095em; }
+    .nav a { font-size:12px; text-transform:uppercase; color:#c2c0bc; transition:color .2s; white-space:nowrap; }
+    .nav a:hover, .nav a.active { color:var(--accent); }
+    .menu-toggle { display:none; background:none; color:var(--text); border:1px solid var(--stroke); border-radius:4px; padding:5px 11px; font-size:22px; cursor:pointer; }
+    main section { border-bottom:1px solid var(--stroke); }
+    .hero { padding:140px 0 122px; min-height:680px; display:flex; align-items:center; }
+    .hero-content { max-width:870px; }
+    .eyebrow { color:var(--accent); font-size:13px; letter-spacing:.18em; text-transform:uppercase; font-weight:500; }
+    h1,h2,h3 { font-family:'Libre Baskerville',Georgia,serif; line-height:1.25; letter-spacing:-.035em; }
+    h1 { font-size:clamp(48px,6.2vw,82px); margin:26px 0 22px; }
+    .hero-role { font-size:clamp(21px,2.3vw,29px); color:#ddd9d2; margin:0 0 23px; }
+    .lead { color:var(--muted); font-size:18px; max-width:700px; }
+    .hero-actions { display:flex; flex-wrap:wrap; gap:14px; margin-top:40px; }
+    .btn { display:inline-flex; align-items:center; gap:12px; justify-content:center; min-height:54px; padding:12px 22px; background:transparent; border:1px solid var(--accent); border-radius:3px; color:var(--accent); font-size:13px; transition:.2s; }
+    .btn:hover { background:var(--accent); color:var(--bg); }
+    .btn.secondary { border-color:#64696c; color:var(--text); }
+    .btn.secondary:hover { background:#252b30; border-color:#aaa; }
+    .section-pad { padding:100px 0 110px; }
+    .section-title { font-size:clamp(34px,4vw,52px); margin:15px 0 1px; }
+    .section-intro { max-width:730px; color:var(--muted); margin:0 0 44px; font-size:17px; }
+    .columns { display:grid; grid-template-columns:1fr 1fr; gap:50px; }
+    .line-item { border-top:1px solid var(--stroke); padding:10px 0; }
+    .line-item h3 { font-size:18px; margin:0 0 5px; }
+    .line-item p { margin:2px 0; color:var(--muted); }
+    .meta { font-family:'DM Mono',monospace; font-size:12px; letter-spacing:.06em; color:var(--accent)!important; }
+    .research-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:17px; }
+    .research-card { padding:28px 24px; border:1px solid var(--stroke); background:var(--bg-soft); min-height:225px; }
+    .research-card .number { font:12px 'DM Mono',monospace; color:var(--accent); }
+    .research-card h3 { font-size:21px; margin:26px 0 11px; }
+    .research-card p { color:var(--muted); margin:0; font-size:14px; }
+    .filters { display:flex; flex-wrap:wrap; gap:10px; margin:0 0 32px; }
+    .filter { background:transparent; border:1px solid var(--stroke); color:#bbb; cursor:pointer; padding:8px 15px; border-radius:3px; font:12px 'DM Mono',monospace; }
+    .filter[aria-pressed="true"] { border-color:var(--accent); color:var(--accent); }
+    .pub-list { display:grid; gap:0; }
+    .pub { border-top:1px solid var(--stroke); padding:24px 0; display:grid; grid-template-columns:90px 1fr; gap:20px; }
+    .pub:last-child { border-bottom:1px solid var(--stroke); }
+    .pub-year { font:13px 'DM Mono',monospace; color:var(--accent); padding-top:5px; }
+    .pub h3 { font:600 18px 'DM Sans',sans-serif; letter-spacing:0; line-height:1.55; margin:0 0 9px; }
+    .pub .venue { margin:0; color:var(--muted); font-size:5px; }
+    .pub a { display:inline-block; color:var(--accent); font:12px 'DM Mono',monospace; margin-top:10px; }
+    .pub a:hover, .contact-link:hover { text-decoration:underline; }
+    .tag-grid { display:flex; flex-wrap:wrap; gap:12px; max-width:850px; }
+    .tag { border:1px solid var(--stroke); padding:13px 17px; font-size:12px; color:#dad6cf; }
+    .skills { display:grid; grid-template-columns:repeat(2,1fr); gap:20px 60px; }
+    .skill { padding:23px 0; border-top:1px solid var(--stroke); }
+    .skill h3 { font:600 19px 'DM Sans',sans-serif; letter-spacing:0; margin:0 0 10px; }
+    .skill p { color:var(--muted); margin:0; }
+    .cv-block { padding:100px 0 80px; }
+    .cv-block h2 { font-size:clamp(42px,5vw,63px); margin:26px 0 17px; }
+    .cv-block .description { font-size:20px; color:#d5d1c9; margin-bottom:45px; }
+    .contact-block { padding:85px 0 110px; }
+    .contact-block h2 { font-size:clamp(34px,4vw,49px); margin:20px 0 28px; }
+    .contact-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 55px; }
+    .contact-item { border-top:1px solid var(--stroke); padding-top:18px; }
+    .contact-item .kicker { display:block; font-size:12px; color:var(--accent); margin-bottom:6px; }
+    .contact-link { word-break:break-word; color:#ece7df; }
+    footer { color:#9fa1a1; padding:30px 0; }
+    .footer-inner { display:flex; justify-content:space-between; gap:20px; font-size:12px; }
+    @media(max-width:950px) { .nav { gap:12px; } .nav a { font-size:10px; } .brand { font-size:18px; } .research-grid { grid-template-columns:repeat(2,1fr); } }
+    @media(max-width:720px) { .container { padding:0 22px; } .header-row { min-height:70px; } .menu-toggle { display:block; } .nav { display:none; position:absolute; top:69px; left:0; right:0; padding:20px 22px; background:var(--bg); border-bottom:1px solid var(--stroke); flex-direction:column; align-items:flex-start; gap:17px; } .nav.open { display:flex; } .nav a { font-size:12px; } .hero { min-height:auto; padding:105px 0 95px; } .lead { font-size:16px; } .section-pad { padding:75px 0 80px; } .columns,.contact-grid,.skills { grid-template-columns:1fr; gap:10px; } .research-grid { grid-template-columns:1fr; } .research-card { min-height:unset; } .pub { grid-template-columns:1fr; gap:3px; } .cv-block { padding:95px 0 75px; } .contact-block { padding:75px 0; } .footer-inner { flex-direction:column; } }
+    @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+  </style>
+<style>
+/* White academic theme */
+:root {--bg:#ffffff;--bg-soft:#f7f9fc;--card:#f7f9fc;--stroke:#e2e8f0;--muted:#536174;--text:#17263a;--accent:#1d5b82;}
+body {background:#fff;color:var(--text);}
+.site-header {background:rgba(255,255,255,.97);box-shadow:0 2px 12px rgba(24,43,69,.035);}
+.nav a {color:#48566a;}
+.nav a:hover,.nav a.active {color:#165b87;}
+.brand {color:#17263a;}
+.hero-role,.cv-block .description,.contact-link {color:#263b51;}
+.btn {border-color:#1d5b82;color:#1d5b82;}
+.btn:hover {background:#1d5b82;color:#fff;}
+.btn.secondary {border-color:#c8d2dd;color:#263b51;}
+.btn.secondary:hover {background:#edf3f8;border-color:#1d5b82;}
+.research-card {background:#f7f9fc;border-radius:6px;}
+.research-card:hover {border-color:#a8bdce;}
+.filter {color:#46566c;}
+.tag {color:#263b51;background:#f7f9fc;}
+footer {color:#68778b;}
+.education-list,.research-appointments {max-width:850px;}
+.education-list .line-item,.research-appointments .line-item {padding:20px 0;}
+strong {color:#17263a;}
+@media(max-width:720px){.nav {background:#fff;box-shadow:0 14px 18px rgba(0,0,0,.045);}}
+
+/* Compact, publication-style layout for education and training only */
+#education .section-intro { margin-bottom: 22px; }
+#education.section-pad { padding-bottom: 10px; }
+#teaching.section-pad { padding-top: 4px; }
+#education .supervisor-link { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+#teaching .section-title { margin-bottom: 22px; }
+.education-list { max-width: none; }
+.education-list .line-item {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    column-gap: 20px;
+    row-gap: 5px;
+    align-items: start;
+    padding: 1px 0;
+}
+.education-list .line-item > .meta {
+    grid-column: 1;
+    grid-row: 1 / span 8;
+    padding-top: 2px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.2;
+}
+.education-list .line-item > h3,
+.education-list .line-item > p:not(.meta) {
+    grid-column: 2;
+    margin: 0;
+}
+.education-list .line-item > h3 {
+    font: 600 16px/1.2 'DM Sans', Arial, sans-serif;
+    letter-spacing: 0;
+    color: var(--text);
+}
+.education-list .line-item > p:not(.meta) {
+    font-size: 13.5px;
+    line-height: 1.1;
+    color: var(--muted);
+}
+@media (max-width: 720px) {
+    #education.section-pad { padding-bottom: 20px; }
+    #teaching.section-pad { padding-top: 25px; }
+    .education-list .line-item {
+        grid-template-columns: minmax(0, 1fr);
+        row-gap: 3px;
+    }
+    .education-list .line-item > .meta {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    .education-list .line-item > h3,
+    .education-list .line-item > p:not(.meta) { grid-column: 1; }
+}
+
+/* Consistent first-section starting alignment across pages */
+main > section:first-child { padding-top: 75px; }
+main > section:first-child .eyebrow { margin: 0; line-height: 1.4; }
+@media (max-width: 720px) {
+    main > section:first-child { padding-top: 60px; }
+}
+</style></head>
+<body>
+<header class="site-header">
+<div class="container header-row">
+<a class="brand" href="index.html">Nazmul Haque</a>
+<button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button">☰</button>
+<nav aria-label="Main navigation" class="nav"><a href="index.html">Home</a><a aria-current="page" class="active" href="education.html">Education</a><a href="research.html">Research &amp; Interests</a><a href="publications.html">Publications</a><a href="skills.html">Technical Skills</a><a href="contact.html">CV &amp; Contact</a></nav>
+</div>
+</header>
+<main>
+<section class="section-pad" id="education"><div class="container">
+<div class="eyebrow">02 / Education</div><h1 class="section-title">Academic Background</h1>
+<p class="section-intro">Formal education in statistics and research training.</p>
+<div class="education-list">
+<article class="line-item"><p class="meta">2022–2023</p><h3>MS in Statistics</h3><p>Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</p><p><strong>Thesis:</strong> Modeling Correlated Flood Peak and Volume with Copula-Based Joint Distribution: Improving Flood Risk Estimation in Bangladesh</p><p><strong>Supervisor:</strong> <a class="supervisor-link" href="https://www.sust.edu/departments/sta/faculty/khalid-sta@sust.edu" target="_blank" rel="noopener noreferrer">Dr. Khalidur Rahman</a></p></article>
+<article class="line-item"><p class="meta">2018–2021</p><h3>BSc in Statistics</h3><p>Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</p></article>
+</div></div></section>
+<section class="section-pad" id="teaching"><div class="container"><div class="eyebrow">Teaching &amp; Training</div><h2 class="section-title">Training Experience</h2>
+<div class="education-list">
+<article class="line-item"><p class="meta">8–9 MAY 2026</p><h3>Trainer — R Programming for Research Data Analysis</h3><p>Sher-e-Bangla Agricultural University, Dhaka · Two-day training for MS and PhD students</p><p>Hands-on experimental design, Completely Randomized Design, Randomized Complete Block Design, and Principal Component Analysis using R.</p></article>
+<article class="line-item"><p class="meta">27–29 NOV 2025</p><h3>Assistant Trainer — R Programming for Research Data Analysis</h3><p>Sher-e-Bangla Agricultural University, Dhaka · Three-day training for teachers</p><p>Supported practical sessions in R programming, research data analysis and troubleshooting.</p></article>
+</div></div></section></main>
+<footer><div class="container footer-inner"><span>© <span id="year">2026</span> Nazmul Haque. All rights reserved.</span><span>Scientific Officer · Bangladesh Rice Research Institute</span></div></footer>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    toggle.addEventListener('click', () => { const open = nav.classList.toggle('open'); toggle.setAttribute('aria-expanded',String(open)); toggle.textContent = open ? '×' : '☰'; });
+    document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => { nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); toggle.textContent='☰'; }));
+    document.querySelectorAll('.filter').forEach(button => button.addEventListener('click', () => {
+      const choice=button.dataset.filter;
+      document.querySelectorAll('.filter').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+      document.querySelectorAll('.pub').forEach(pub=>pub.hidden = choice!=='all' && pub.dataset.type!==choice);
+    }));
+  </script>
+</body>
+</html>
