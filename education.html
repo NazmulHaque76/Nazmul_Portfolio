@@ -168,13 +168,30 @@ main > section:first-child .eyebrow { margin: 0; line-height: 1.4; }
 @media (max-width: 720px) {
     main > section:first-child { padding-top: 60px; }
 }
+</style><style>
+/* Research appointments moved to Education, between background and training */
+#education.section-pad { padding-bottom: 10px; }
+#experience.section-pad { padding-top: 4px; padding-bottom: 10px; }
+#experience .section-title { margin-bottom: 12px; }
+#experience .section-intro { margin-bottom: 20px; font-size: 15px; max-width: none; }
+#experience .experience-list .line-item { grid-template-columns: 205px minmax(0,1fr); padding: 5px 0; row-gap: 3px; }
+#experience .experience-list .line-item > .meta { grid-row: 1 / span 2; }
+#experience .experience-list .line-item > p:not(.meta) { font-size: 13px; line-height: 1.35; }
+#teaching.section-pad { padding-top: 4px; }
+@media(max-width:720px) {
+ #education.section-pad { padding-bottom: 20px; }
+ #experience.section-pad { padding-top: 25px; padding-bottom: 20px; }
+ #experience .experience-list .line-item { grid-template-columns: minmax(0,1fr); row-gap: 4px; padding: 10px 0; }
+ #experience .experience-list .line-item > .meta { grid-row: auto; }
+ #teaching.section-pad { padding-top: 25px; }
+}
 </style></head>
 <body>
 <header class="site-header">
 <div class="container header-row">
 <a class="brand" href="index.html">Nazmul Haque</a>
 <button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle" type="button">☰</button>
-<nav aria-label="Main navigation" class="nav"><a href="index.html">Home</a><a aria-current="page" class="active" href="education.html">Education</a><a href="research.html">Research &amp; Interests</a><a href="publications.html">Publications</a><a href="skills.html">Technical Skills</a><a href="contact.html">CV &amp; Contact</a></nav>
+<nav aria-label="Main navigation" class="nav"><a href="index.html">Home</a><a aria-current="page" class="active" href="education.html">Education &amp; Experience</a><a href="research.html">Research Interests</a><a href="publications.html">Publications</a><a href="skills.html">Technical Skills</a><a href="contact.html">CV &amp; Contact</a></nav>
 </div>
 </header>
 <main>
@@ -182,10 +199,10 @@ main > section:first-child .eyebrow { margin: 0; line-height: 1.4; }
 <div class="eyebrow">02 / Education</div><h1 class="section-title">Academic Background</h1>
 <p class="section-intro">Formal education in statistics and research training.</p>
 <div class="education-list">
-<article class="line-item"><p class="meta">2022–2023</p><h3>MS in Statistics</h3><p>Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</p><p><strong>Thesis:</strong> Modeling Correlated Flood Peak and Volume with Copula-Based Joint Distribution: Improving Flood Risk Estimation in Bangladesh</p><p><strong>Supervisor:</strong> <a class="supervisor-link" href="https://www.sust.edu/departments/sta/faculty/khalid-sta@sust.edu" target="_blank" rel="noopener noreferrer">Dr. Khalidur Rahman</a></p></article>
+<article class="line-item"><p class="meta">2022–2023</p><h3>MS in Statistics</h3><p>Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</p><p><strong>Thesis:</strong> Modeling Correlated Flood Peak and Volume with Copula-Based Joint Distribution: Improving Flood Risk Estimation in Bangladesh</p><p><strong>Supervisor:</strong> <a class="supervisor-link" href="https://www.sust.edu/departments/sta/faculty/khalid-sta@sust.edu" rel="noopener noreferrer" target="_blank">Dr. Khalidur Rahman</a></p></article>
 <article class="line-item"><p class="meta">2018–2021</p><h3>BSc in Statistics</h3><p>Shahjalal University of Science and Technology (SUST), Sylhet, Bangladesh</p></article>
 </div></div></section>
-<section class="section-pad" id="teaching"><div class="container"><div class="eyebrow">Teaching &amp; Training</div><h2 class="section-title">Training Experience</h2>
+<section class="section-pad" id="experience"><div class="container"><div class="eyebrow">Experience</div><h2 class="section-title">Research &amp; Experience</h2><p class="section-intro">My work connects statistical inference with real-world challenges in crop production, weather, flood risk and human health.</p><div class="education-list experience-list"><div class="line-item"><p class="meta">JUN 2026 — PRESENT</p><h3>Scientific Officer</h3><p>Agricultural Statistics Division, Bangladesh Rice Research Institute, Gazipur-1701 </p></div><div class="line-item"><p class="meta">AUG 2025 — MAY 2026</p><h3>Research Assistant</h3><p> Agromet Lab, Bangladesh Rice Research Institute, Gazipur-1701</p></div><div class="line-item"><p class="meta">JUL 2024 — JUN 2025</p><h3>Research Assistant</h3><p>Department of Statistics, SUST · PI: Dr. Khalidur Rahman</p></div><div class="line-item"><p class="meta">JUL 2023 — JUN 2024</p><h3>Research Assistant</h3><p>Department of Statistics, SUST · PI: Dr. Md. Azizul Baten</p></div></div></div></section><section class="section-pad" id="teaching"><div class="container"><div class="eyebrow">Teaching &amp; Training</div><h2 class="section-title">Training Experience</h2>
 <div class="education-list">
 <article class="line-item"><p class="meta">8–9 MAY 2026</p><h3>Trainer — R Programming for Research Data Analysis</h3><p>Sher-e-Bangla Agricultural University, Dhaka · Two-day training for MS and PhD students</p><p>Hands-on experimental design, Completely Randomized Design, Randomized Complete Block Design, and Principal Component Analysis using R.</p></article>
 <article class="line-item"><p class="meta">27–29 NOV 2025</p><h3>Assistant Trainer — R Programming for Research Data Analysis</h3><p>Sher-e-Bangla Agricultural University, Dhaka · Three-day training for teachers</p><p>Supported practical sessions in R programming, research data analysis and troubleshooting.</p></article>
